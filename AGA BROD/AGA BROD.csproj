@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6DACBD3-1416-4F48-8EBA-8DAF9BA28564}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AGA_BROD</RootNamespace>
+    <AssemblyName>AGA BROD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>aga brod.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="B.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>B.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="B1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>B1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="B3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>B3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devis.Designer.cs">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Détail Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Détail Devis.Designer.cs">
+      <DependentUpon>Détail Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Détail Facture prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Détail Facture prof.Designer.cs">
+      <DependentUpon>Détail Facture prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Détail Facture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Détail Facture.Designer.cs">
+      <DependentUpon>Détail Facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facture Proforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facture Proforma.Designer.cs">
+      <DependentUpon>Facture Proforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facture.Designer.cs">
+      <DependentUpon>Facture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imp Devis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imp Devis.Designer.cs">
+      <DependentUpon>Imp Devis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imp facture prof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imp facture prof.Designer.cs">
+      <DependentUpon>Imp facture prof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMP FACTURE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMP FACTURE.Designer.cs">
+      <DependentUpon>IMP FACTURE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produit.Designer.cs">
+      <DependentUpon>Produit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLconnecter.cs" />
+    <Compile Include="Ville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ville.Designer.cs">
+      <DependentUpon>Ville.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devis.resx">
+      <DependentUpon>Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Détail Devis.resx">
+      <DependentUpon>Détail Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Détail Facture prof.resx">
+      <DependentUpon>Détail Facture prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Détail Facture.resx">
+      <DependentUpon>Détail Facture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facture Proforma.resx">
+      <DependentUpon>Facture Proforma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facture.resx">
+      <DependentUpon>Facture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imp Devis.resx">
+      <DependentUpon>Imp Devis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imp facture prof.resx">
+      <DependentUpon>Imp facture prof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMP FACTURE.resx">
+      <DependentUpon>IMP FACTURE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produit.resx">
+      <DependentUpon>Produit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ville.resx">
+      <DependentUpon>Ville.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="B.xsc">
+      <DependentUpon>B.xsd</DependentUpon>
+    </None>
+    <None Include="B.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>B.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="B.xss">
+      <DependentUpon>B.xsd</DependentUpon>
+    </None>
+    <None Include="B1.xsc">
+      <DependentUpon>B1.xsd</DependentUpon>
+    </None>
+    <None Include="B1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>B1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="B1.xss">
+      <DependentUpon>B1.xsd</DependentUpon>
+    </None>
+    <None Include="B3.xsc">
+      <DependentUpon>B3.xsd</DependentUpon>
+    </None>
+    <None Include="B3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>B3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="B3.xss">
+      <DependentUpon>B3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\téléchargement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aga brod.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
